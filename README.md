@@ -27,3 +27,5 @@ DB_PASSWORD=laravel_pass
  
 7.シーディングの実行
 php artisan db:seed
+
+<img width="1920" height="1080" alt="スクリーンショット 2025-08-23 125804" src="https://github.com/user-attachments/assets/e1a87e9d-4120-4881-8d44-bfc4755b22cb" />
