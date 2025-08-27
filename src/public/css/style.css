@@ -1,0 +1,82 @@
+.container {
+    display: flex;
+    gap: 20px;
+}
+
+/* サイドバー */
+.sidebar {
+    width: 200px;
+}
+
+.sidebar form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sidebar input,
+.sidebar select,
+.sidebar button {
+    padding: 8px;
+    font-size: 14px;
+}
+
+.sidebar button {
+    background-color: #f9c300;
+    border: none;
+    cursor: pointer;
+}
+
+/* コンテンツ部分 */
+.content {
+    flex: 1;
+}
+
+/* 商品追加ボタン */
+.add-btn {
+    text-align: right;
+    margin-bottom: 15px;
+}
+
+.add-btn a {
+    background-color: #f9c300;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* 商品グリッド */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.product-card {
+    border: 1px solid #eee;
+    padding: 10px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-name {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.product-price {
+    color: #333;
+}
+
+/* ページネーション */
+.pagination {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}

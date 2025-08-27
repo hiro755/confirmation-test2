@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ProductController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +15,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// 商品検索だけリソース外にあるなら、個別に記述
+Route::get('/products/search', [ProductController::class, 'search'])->name('products.search');
+
+// これが全CRUDのルーティングを一括で定義してくれます
+Route::resource('products', ProductController::class);
+
